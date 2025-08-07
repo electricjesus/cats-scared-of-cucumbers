@@ -39,6 +39,9 @@ dist/
 # Cucumber output
 reports/
 
+# Screenshots
+screenshots/
+
 # Auto-generated docs
 /docs/framework/*.html
 /docs/features/*.html

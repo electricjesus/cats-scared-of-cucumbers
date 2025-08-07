@@ -1,0 +1,26 @@
+{
+  "name": "cats-scared-of-cucumbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js",
+    "generate-steps": "cucumber-js --dry-run --format snippets",
+    "auto-generate-steps": "node scripts/auto-generate-steps.js",
+    "test:auto": "npm run auto-generate-steps && npm run test",
+    "docs:generate": "node scripts/generate-docs.js",
+    "docs:check": "node scripts/check-docs.js",
+    "sync:check": "node scripts/sync-features.js",
+    "sync:clean": "node scripts/sync-features.js --clean",
+    "sync:rename": "node scripts/rename-feature.js",
+    "watch": "node scripts/watch-features.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.1.0",
+    "chokidar": "^4.0.3"
+  }
+}
